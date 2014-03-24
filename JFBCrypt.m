@@ -874,4 +874,21 @@ signed char index_64[] = {
 	return salt;
 }
 
+/*
+ * Extracts the salt from the hash and checks to see if a provided password hashes to the same value
+ *
+ * Params
+ *      password    The password to hash
+ *      hash        The computed hash containing the salt and hashed password
+ *
+ * Returns
+ *      Boolean if the password matches the hash
+ */
++ (BOOL)comparePassword:(NSString *)password toHash:(NSString *)hash
+{
+    NSString *salt = [hash substringToIndex:BCRYPT_SALT_LEN+13];
+    NSString *computedHash = [JFBCrypt hashPassword:password withSalt:salt];
+    return [hash isEqualToString:computedHash];
+}
+
 @end

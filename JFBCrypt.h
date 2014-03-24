@@ -44,5 +44,6 @@
 
 + (NSString *) hashPassword: (NSString *) password withSalt: (NSString *) salt;
 + (NSString *) generateSaltWithNumberOfRounds: (SInt32) numberOfRounds;
++ (BOOL)comparePassword:(NSString*)password toHash:(NSString*)hash;
 
 @end
