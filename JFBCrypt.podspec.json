@@ -1,6 +1,6 @@
 {
     "name": "JFBCrypt",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "summary": "BCrypt in Objective C",
     "authors": "Jason Fuerstenberg",
     "homepage": "http://www.jayfuerstenberg.com/blog/bcrypt-in-objective-c",
@@ -10,7 +10,7 @@
     },
     "source": {
         "git": "https://github.com/sabymike/JFCommon.git",
-        "tag": "0.1.3"
+        "tag": "0.1.4"
     },
     "platforms": {
         "ios": null
