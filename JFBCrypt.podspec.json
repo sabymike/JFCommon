@@ -1,0 +1,24 @@
+{
+    "name": "JFBCrypt",
+    "version": "0.1.3",
+    "summary": "BCrypt in Objective C",
+    "authors": "Jason Fuerstenberg",
+    "homepage": "http://www.jayfuerstenberg.com/blog/bcrypt-in-objective-c",
+    "license": {
+        "type": "Apache",
+        "file": "LICENSE"
+    },
+    "source": {
+        "git": "https://github.com/sabymike/JFCommon.git",
+        "tag": "0.1.3"
+    },
+    "platforms": {
+        "ios": null
+    },
+    "source_files": [
+    "JFBCrypt.*",
+    "JFGC.h",
+    "JFRandom.*"
+  ],
+    "requires_arc": false
+}
